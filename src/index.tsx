@@ -9,9 +9,7 @@ const root = ReactDOM.createRoot(
 );
 
 const render = () => root.render(
-  <>
-    <App />
-  </>
+  <App />
 );
 render();
 
