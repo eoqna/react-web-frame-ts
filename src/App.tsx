@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const ContentWrapper = styled.div`
   text-align: center;
-  background-color: black;
   height: 800px;
   width: 100%;
 `;
