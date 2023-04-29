@@ -15,7 +15,7 @@ function App({ sidebar, setSidebar, setWidth }: { sidebar: boolean; setSidebar: 
 
   return (
     <SideBar id="sidebar" ref={open}>
-
+      사이드바
     </SideBar>
   );
 }
