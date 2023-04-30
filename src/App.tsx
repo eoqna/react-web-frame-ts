@@ -87,7 +87,6 @@ function App() {
           (<Sidebar sidebar={sidebar} setSidebar={setSidebar} setWidth='0px'/>)
         }
         
-
         <MainWrapper>
           <MainTitle>
             메인
