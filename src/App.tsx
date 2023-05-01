@@ -71,6 +71,7 @@ function App() {
         >
           버튼
         </HeaderButton>
+        
         <HeaderTitle>
           헤더
         </HeaderTitle>
