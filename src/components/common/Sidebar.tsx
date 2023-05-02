@@ -1,23 +1,23 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
+import Profile from './Profile';
+import Menu from './Menu';
 
-const SideBar = styled.div`
-  height: 100%;
-  background-color: #ddd;
-  border-right: 1px solid #eee;
-`;
-
-function App({ sidebar, setSidebar, setWidth }: { sidebar: boolean; setSidebar: any, setWidth: string }) {
-  const open = useRef<any>();
-
-  useEffect(() => {
-  }, [])
+function SideBar( { setDisplay }: { setDisplay: string } ) {
+  const Layout = styled.div`
+    width: 320px;
+    height: 100%;
+    background-color: rgb(250, 250, 250);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    display: ${setDisplay}
+  `;
 
   return (
-    <SideBar id="sidebar" ref={open}>
-      사이드바
-    </SideBar>
+    <Layout>
+      <Profile />
+      <Menu />
+    </Layout>
   );
 }
 
-export default App;
+export default SideBar;
