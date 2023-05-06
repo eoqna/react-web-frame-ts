@@ -27,7 +27,6 @@ function App() {
       <Header sidebar={sidebar} setSidebar={setSidebar} />
 
       <BodyLayout>
-
         <BrowserRouter>
           {sidebar ?
             (<Sidebar setDisplay='none'/>)
@@ -37,7 +36,6 @@ function App() {
         
           <Main />
         </BrowserRouter>
-
       </BodyLayout>
 
       <Footer />
