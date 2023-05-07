@@ -11,13 +11,6 @@ from '@mdi/js';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export interface MenuProps {
-  index: number;
-  title: string;
-  icon: string;
-  to: string;
-};
-
 const MenuLayout = styled.ul`
   list-style: none;
   padding: 20px 0 0 30px;
@@ -28,6 +21,13 @@ const MenuList = styled.div`
   height: 40px;
   color: rgba(0, 0, 0, 0.6);
 `;
+
+export interface MenuProps {
+  index: number;
+  title: string;
+  icon: string;
+  to: string;
+};
 
 const menus: MenuProps[] = [
   {
@@ -70,15 +70,15 @@ const menus: MenuProps[] = [
 
 function Menu() {
   const StyledLink = styled(Link)`
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: rgba(0, 0, 0, 0.6);
-  &:active {
-    color: black;
-    font-weight: bold;
-  }
-`;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.6);
+    &:active {
+      color: black;
+      font-weight: bold;
+    }
+  `;
 
   return (
     <MenuLayout>

@@ -16,7 +16,6 @@ const Layout = styled.div`
 `;
 
 function Main() {
-
   return (
     <Layout>
       <Routes>
